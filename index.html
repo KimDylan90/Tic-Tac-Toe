@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .cell {
+      border: 1px solid black;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .cell:hover {
+      background-color: lightgray;
+    }
+    .message {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .new-game-btn {
+      font-size: 16px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  
+  <div class="message"></div>
+  
+  <div class="board">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+  
+  <button class="new-game-btn">Neues Spiel</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
